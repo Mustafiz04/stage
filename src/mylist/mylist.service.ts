@@ -1,13 +1,13 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import mongoose from 'mongoose';
-import { User } from 'src/schema/User';
-import { Movie } from 'src/schema/Movie';
-import { TVShow } from 'src/schema/TVShow';
+import { User } from '../schema/User';
+import { Movie } from '../schema/Movie';
+import { TVShow } from '../schema/tvshow';
 import { UserDto } from './dto/user.dto';
-import UserData from 'src/data/users';
-import moviesData from 'src/data/movie';
-import tvShowData from 'src/data/tvshows';
+import UserData from '../data/users';
+import moviesData from '../data/movie';
+import tvShowData from '../data/tvshows';
 
 @Injectable()
 export class MylistService {

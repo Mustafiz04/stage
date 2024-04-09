@@ -7,8 +7,8 @@ import {
   IsDate,
   IsNumber,
 } from 'class-validator';
-import { Movie } from 'src/schema/Movie';
-import { TVShow } from 'src/schema/tvshow';
+import { Movie } from '../../schema/Movie';
+import { TVShow } from '../../schema/tvshow';
 
 export class PreferencesDto {
   @IsArray()
